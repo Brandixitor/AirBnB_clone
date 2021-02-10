@@ -1,5 +1,5 @@
 # 0x00. AirBnB clone - The console
-[Imgur](https://imgur.com/mL0Kkh1)  
+![Imgur](https://imgur.com/mL0Kkh1)  
 
 Project description:  
 Goes here
