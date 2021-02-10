@@ -6,9 +6,9 @@ import datetime from datetime
 
 
 class BaseModel:
-    """A base class for all hbnb models"""
+    """A base class for all AirBnB models"""
     def __init__(self, *args, **kwargs):
-        """Instatntiates a new model"""
+        """Initialisation of a new model"""
         if not kwargs:
             from models import storage
             self.id = str(uuid.uuid4())
