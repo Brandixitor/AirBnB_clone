@@ -16,5 +16,5 @@ goes here
 
 ## examples:
 - goes here
-- here
+- here,
 - and here
