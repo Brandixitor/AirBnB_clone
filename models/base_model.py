@@ -2,10 +2,11 @@
 """This model defines a base class for all models in this AirBnB Clone"""
 import uuid
 import datetime from datetime
+import json
 
 
 
-class BaseModel:
+class BaseModel():
     """A base class for all AirBnB models"""
     def __init__(self, *args, **kwargs):
         """Initialisation of a new model"""
