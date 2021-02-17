@@ -29,20 +29,20 @@ Can also be used as <class_name>.update(<id>, <attribute_name>, <attribute_value
 
 ### examples:
     [vagrant@ubuntu AirBnB_clone ]$ ./console.py
-(hbnb) help
+    (hbnb) help
 
-Documented commands (type help <topic>):
-========================================
-EOF  all  create  destroy  help  quit  show  update
+    Documented commands (type help <topic>):
+    ========================================
+    EOF  all  create  destroy  help  quit  show  update
 
-(hbnb) create User
-d115b993-d908-4e26-8fab-959a52d49019
-(hbnb) User.update("d115b993-d908-4e26-8fab-959a52d49019", {"first_name": "John", "last_name": "Doe", "Age": 42})
-(hbnb) show User "d115b993-d908-4e26-8fab-959a52d49019"
-[User] (d115b993-d908-4e26-8fab-959a52d49019) {'created_at': datetime.datetime(2021, 2, 17, 15, 28, 17, 826093), 'last_name': 'Doe', 'Age': 42, 'first_name': 'John', 'id': 'd115b993-d908-4e26-8fab-959a52d49019', 'updated_at': datetime.datetime(2021, 2, 17, 15, 29, 22, 539231)}
-(hbnb) create Place
-ed8d930d-33a2-4eba-9133-beb2ab8e633d
-(hbnb) all
-["[User] (d115b993-d908-4e26-8fab-959a52d49019) {'created_at': datetime.datetime(2021, 2, 17, 15, 28, 17, 826093), 'last_name': 'Doe', 'Age': 42, 'first_name': 'John', 'id': 'd115b993-d908-4e26-8fab-959a52d49019', 'updated_at': datetime.datetime(2021, 2, 17, 15, 29, 22, 539231)}", "[User] (dc1b70d8-282e-42dc-a25e-0e4893000705) {'created_at': datetime.datetime(2021, 2, 17, 15, 22, 36, 332889), 'id': 'dc1b70d8-282e-42dc-a25e-0e4893000705', 'updated_at': datetime.datetime(2021, 2, 17, 15, 22, 36, 332908)}", "[Place] (ed8d930d-33a2-4eba-9133-beb2ab8e633d) {'created_at': datetime.datetime(2021, 2, 17, 15, 30, 14, 168508), 'id': 'ed8d930d-33a2-4eba-9133-beb2ab8e633d', 'updated_at': datetime.datetime(2021, 2, 17, 15, 30, 14, 168520)}"]
-(hbnb) quit
-[vagrant@ubuntu AirBnB_clone ]$
+    (hbnb) create User
+    d115b993-d908-4e26-8fab-959a52d49019
+    (hbnb) User.update("d115b993-d908-4e26-8fab-959a52d49019", {"first_name": "John", "last_name": "Doe", "Age": 42})
+    (hbnb) show User "d115b993-d908-4e26-8fab-959a52d49019"
+    [User] (d115b993-d908-4e26-8fab-959a52d49019) {'created_at': datetime.datetime(2021, 2, 17, 15, 28, 17, 826093), 'last_name': 'Doe', 'Age': 42, 'first_name': 'John', 'id': 'd115b993-d908-4e26-8fab-959a52d49019', 'updated_at': datetime.datetime(2021, 2, 17, 15, 29, 22, 539231)}
+    (hbnb) create Place
+    ed8d930d-33a2-4eba-9133-beb2ab8e633d
+    (hbnb) all
+    ["[User] (d115b993-d908-4e26-8fab-959a52d49019) {'created_at': datetime.datetime(2021, 2, 17, 15, 28, 17, 826093), 'last_name': 'Doe', 'Age': 42, 'first_name': 'John', 'id': 'd115b993-d908-4e26-8fab-959a52d49019', 'updated_at': datetime.datetime(2021, 2, 17, 15, 29, 22, 539231)}", "[User] (dc1b70d8-282e-42dc-a25e-0e4893000705) {'created_at': datetime.datetime(2021, 2, 17, 15, 22, 36, 332889), 'id': 'dc1b70d8-282e-42dc-a25e-0e4893000705', 'updated_at': datetime.datetime(2021, 2, 17, 15, 22, 36, 332908)}", "[Place] (ed8d930d-33a2-4eba-9133-beb2ab8e633d) {'created_at': datetime.datetime(2021, 2, 17, 15, 30, 14, 168508), 'id': 'ed8d930d-33a2-4eba-9133-beb2ab8e633d', 'updated_at': datetime.datetime(2021, 2, 17, 15, 30, 14, 168520)}"]
+    (hbnb) quit
+    [vagrant@ubuntu AirBnB_clone ]$
