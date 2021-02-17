@@ -9,8 +9,8 @@ This project is a clone to the Airbnb website.
 The command interpreter is a Command-Line used to manage the application directly from the server side (Back-end).
 
 ### How to start it:  
-Interactive Mode: $ ./console.py  
-Non-interactive Mode: $ echo <command> | ./console.py
+Interactive Mode:   $ ./console.py  
+Non-interactive Mode:   $ echo <command> | ./console.py
 
 
 ### How to use it?  
