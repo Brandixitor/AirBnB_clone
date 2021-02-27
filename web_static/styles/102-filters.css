@@ -1,0 +1,170 @@
+.container .filters {
+  background-color: #ffffff;
+  height: 70px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: start;
+}
+
+@media only screen and (min-width: 600px) {
+  .container .filters {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+  }
+}
+
+.filters button {
+  background: #ff5a5f url("../images/magnifying-glass_icon.svg") no-repeat;
+  background-position: center;
+  background-size: 50%;
+  font-size: 18px;
+  color: #ffffff;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media only screen and (min-width: 600px) {
+  .filters button::before {
+    content: "Search";
+  }
+  .filters button {
+    background: #ff5a5f;
+    position: absolute;
+    right: 30px;
+    width: 20%;
+    height: 48px;
+  }
+}
+
+.filters button:hover {
+  opacity: 90%;
+}
+
+.filters .locations,
+.filters .amenities {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .filters .locations,
+  .filters .amenities {
+    width: 30%;
+    text-align: start;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .filters .locations,
+  .filters .amenities {
+    width: 25%;
+    text-align: start;
+  }
+}
+
+.filters .locations h3,
+.filters .amenities h3 {
+  font-weight: 600;
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .filters .locations h3,
+  .filters .amenities h3 {
+    padding-left: 50px;
+  }
+}
+
+.filters .locations h4,
+.filters .amenities h4 {
+  font-weight: 400;
+  font-size: 12px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .filters .locations h4,
+  .filters .amenities h4 {
+    padding-left: 50px;
+    font-size: 14px;
+  }
+}
+
+.filters .locations {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #dddddd;
+}
+
+.filters .amenities {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid #dddddd;
+  border-left: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .filters .locations {
+    border: none;
+    border-right: 1px solid #dddddd;
+  }
+
+  .filters .amenities {
+    border: none;
+  }
+}
+
+.filters .popover {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: inherit;
+  top: 100%;
+  z-index: 1;
+}
+
+.filters .popover h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.filters ul.popover {
+  margin: 0;
+  margin-left: -1px;
+  padding: 30px 0px;
+}
+
+.filters .popover li {
+  list-style: none;
+  padding: 2px 0px;
+  padding-left: 25px;
+}
+
+.filters .popover ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .locations:hover .popover {
+    display: inline-block;
+  }
+
+  .amenities:hover .popover {
+    display: inline-block;
+  }
+}
